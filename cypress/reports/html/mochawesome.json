@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-14T07:19:28.931Z",
+    "end": "2025-07-14T07:19:29.566Z",
+    "duration": 635,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3621e07d-789b-47d5-b570-bc51a0247272",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-carhire.cy.js",
+      "file": "cypress\\e2e\\login-carhire.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "02cfa89c-48a3-468e-a4ce-fd90e6813d17",
+          "title": "logs in the admin user and asserts if they landed on the dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "logs in the admin user and asserts if they landed on the dashboard passes",
+              "timedOut": null,
+              "duration": 576,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://car-hire.test/login'); //navigates to the log in page.\ncy.get('#email').type(admin.email); //navigates to email and types email address.\ncy.get('#password').type(admin.password); //navigates to password and types password. \ncy.get('#dashboard-login-form > button').click(); //clicks the submit button.\n//asserts if the user redirected to the dashboard. \ncy.url().should(\"include\", \"/dashboard\");",
+              "err": {
+                "message": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\admin\n    > cypress\\fixtures\\admin.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `logs in the admin user and ...`",
+                "estack": "Error: A fixture file could not be found at any of the following paths:\n\n    > cypress\\fixtures\\admin\n    > cypress\\fixtures\\admin.[ext]\n\nCypress looked for these file extensions at the provided path:\n\n    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip\n\nProvide a path to an existing fixture file.\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `logs in the admin user and ...`\n    at Object.<anonymous> (<embedded>:2749:327496)\n    at Object.tryCatcher (C:\\Users\\Laiba\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\Laiba\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (C:\\Users\\Laiba\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (C:\\Users\\Laiba\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (C:\\Users\\Laiba\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:694:18)\n    at Promise._fulfill (C:\\Users\\Laiba\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at <unknown> (C:\\Users\\Laiba\\AppData\\Local\\Cypress\\Cache\\14.5.1\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\nodeback.js:42:21)\n    at s (<embedded>:227:132401)\n    at D.<anonymous> (<embedded>:2743:158564)\n    at D.emit (node:events:518:28)\n    at D._finish (<embedded>:2743:159494)\n    at i (<embedded>:2743:158885)\n    at D._processSimple2 (<embedded>:2743:164651)\n    at <unknown> (<embedded>:2743:164504)\n    at D._stat2 (<embedded>:2743:165569)\n    at <unknown> (<embedded>:2743:165416)\n    at s (<embedded>:1067:24225)\n    at s (<embedded>:227:132401)\n    at r (<embedded>:2865:13639)\n    at FSReqCallback.oncomplete (node:fs:197:21)",
+                "diff": null
+              },
+              "uuid": "6e42e4c5-4f04-48c9-953f-8639c1b96dab",
+              "parentUUID": "02cfa89c-48a3-468e-a4ce-fd90e6813d17",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6e42e4c5-4f04-48c9-953f-8639c1b96dab"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 576,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/html",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

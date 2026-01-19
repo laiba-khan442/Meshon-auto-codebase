@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-07-14T08:13:19.154Z",
+    "end": "2025-07-14T08:13:33.868Z",
+    "duration": 14714,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2139de79-e7fe-47fd-acc7-abb45723b4e1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-carhire.cy.js",
+      "file": "cypress\\e2e\\login-carhire.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "955c9f42-a124-4b0f-b6a1-ec7e9f6cdf53",
+          "title": "logs in the admin user and asserts if they landed on the dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "logs in the admin user and asserts if they landed on the dashboard passes",
+              "timedOut": null,
+              "duration": 9865,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//access data from the User_data.json file. \ncy.fixture('user_data').then(data => {\n  console.log('Fixture data:', data); //temp\n  const admin = data.admin;\n  console.log('Admin Email:', admin.email); //temp\n  cy.visit('http://car-hire.test/login'); //navigates to the log in page.\n  cy.get('#email').type(admin.email); //navigates to email and types email address.\n  cy.get('#password').type(admin.password); //navigates to password and types password. \n  cy.get('#dashboard-login-form > button').click(); //clicks the submit button.\n  //asserts if the user redirected to the dashboard. \n  cy.url().should(\"include\", \"/dashboard\");\n});",
+              "err": {},
+              "uuid": "85346e65-fe72-4cff-8af7-64d7a5e19b11",
+              "parentUUID": "955c9f42-a124-4b0f-b6a1-ec7e9f6cdf53",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85346e65-fe72-4cff-8af7-64d7a5e19b11"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9865,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/html",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
