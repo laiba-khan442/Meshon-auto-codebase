@@ -1,0 +1,21 @@
+{
+  "name": "cypress.carhire",
+  "version": "1.0.0",
+  "description": "It is used to conduct automated testing for the project car hire. It will also conduct automated headless testing.",
+  "license": "ISC",
+  "author": "laiba.khan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:run": "cypress run",
+    "report:generate": "npx mochawesome-merge cypress/reports/html/*.json > cypress/reports/html/report.json && npx marge cypress/reports/html/report.json --reportDir cypress/reports/html --reportFilename index.html",
+    "test:with-report": "npm run test:run && npm run report:generate"
+  },
+  "devDependencies": {
+    "cypress": "^14.5.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
