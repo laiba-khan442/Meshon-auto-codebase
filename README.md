@@ -1,2 +1,2 @@
 # Meshon-auto-codebase
-This is a repository having all the test automation code for all projects.  
+This is a repository having all the test automation code for MyWheelz and Car Hire platforms
