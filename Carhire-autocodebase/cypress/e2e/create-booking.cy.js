@@ -26,7 +26,7 @@ describe('It navigates to booking module and creates a booking', () => {
      
    cy.get('#amount').type("100");
    cy.get('#comments').type("This is a test booking"); 
-   Cy.get("#booking-form > div.card-body > fieldset > div > div:nth-child(1) > div > span > span.selection > span > span.select2-selection__arrow", {timeout: 1000})
+   cy.get("#booking-form > div.card-body > fieldset > div > div:nth-child(1) > div > span > span.selection > span > span.select2-selection__arrow", {timeout: 1000})
      .should("be.visible")
      .click('top'); 
 
