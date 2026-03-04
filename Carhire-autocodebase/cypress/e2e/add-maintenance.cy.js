@@ -1,6 +1,6 @@
 //logs in as admin, navigates to settings and adds a test maintenance type. 
 
-describe('It navigates to settings and adds a test maintenance type', () => {
+describe('It navigates to settings and adds a test maintenance type when all necessary fields are filled', () => {
  it('passes', () => {
     cy.loginAsAdmin(); 
     cy.visit('http://car-hire.test/dashboard') //navigates to the log in page.

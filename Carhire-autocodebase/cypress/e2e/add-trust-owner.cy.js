@@ -2,7 +2,7 @@
 
 const { getRandomIntegerUpTo } = require('../utils/helper');
 
-describe('It navigates to settings and creates a company type owner', () => {
+describe('It navigates to settings and creates a company type owner with all correct fields', () => {
  it('passes', () => {
     cy.loginAsAdmin(); 
     cy.visit('http://car-hire.test/dashboard'); //navigates to the dashboard. 

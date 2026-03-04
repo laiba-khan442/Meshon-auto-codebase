@@ -2,7 +2,7 @@
 
 const { getRandomIntegerUpTo } = require('../utils/helper');
 
-describe('It navigates to settings and creates a new role', () => {
+describe('It navigates to settings and creates a new user with all correct data types', () => {
  it('passes', () => {
     cy.loginAsAdmin(); 
     cy.visit('http://car-hire.test/dashboard'); //navigates to the dashboard. 

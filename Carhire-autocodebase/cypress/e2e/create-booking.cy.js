@@ -2,7 +2,7 @@
 
 const {getTodaysDate, getTomorrowsDate,} = require('../utils/helper');
 
-describe('It navigates to booking module and creates a booking', () => {
+describe('It navigates to booking module and creates a single day booking when all fields are filled', () => {
  it('passes', () => {
     cy.loginAsAdmin(); 
     cy.get('#main-sidebar > div > div.os-padding > div > div > nav > ul > li:nth-child(3) > a').click(); 
@@ -12,7 +12,6 @@ describe('It navigates to booking module and creates a booking', () => {
    const today = getTodaysDate();
    cy.get('#starting_date').type(today); 
    //to select date after 24 hours
-   const tomorrow = getTomorrowsDate(); 
    cy.get('#ending_date').clear();
    cy.tomorrowsDate().then(tomorrow => {
       cy.get('#ending_date').type(tomorrow);

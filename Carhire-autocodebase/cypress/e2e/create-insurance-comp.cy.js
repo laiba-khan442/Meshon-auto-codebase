@@ -1,6 +1,6 @@
 //Navigates to settings and registers new insurance company
 
-describe('It navigates to settings and adds a test maintenance type', () => {
+describe('It navigates to settings and adds a test maintenance type with all correct data types', () => {
  it('passes', () => {
     cy.fixture('data').then((data)=>{
     const $phone = data; 

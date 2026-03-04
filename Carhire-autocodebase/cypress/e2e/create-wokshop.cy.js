@@ -1,6 +1,6 @@
 //Navigates to settings and creates a new workshop.
 
-describe('It navigates to settings and creates a new workshop', () => {
+describe('It navigates to settings and creates a new workshop with generic data types', () => {
  it('passes', () => {
     cy.fixture('data').then((data)=>{
     const $phone = data; 
