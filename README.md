@@ -1,4 +1,4 @@
-# MeshoN QA Automation Repository
+# Meshon QA Automation Repository
 
 This repository contains automated test scripts and supporting resources for two vehicle management applications: **CarHire** and **MyWheelz**. It serves as a baseline framework for validating core functionality, performing regression checks, and maintaining test coverage for both projects.  
 
