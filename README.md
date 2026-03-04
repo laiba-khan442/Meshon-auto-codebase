@@ -1,4 +1,4 @@
-# MeshoN QA Automation Repository
+# Meshon QA Automation Repository
 
 This repository contains automated test scripts and supporting resources for two vehicle management applications: **CarHire** and **MyWheelz**. It serves as a baseline framework for validating core functionality, performing regression checks, and maintaining test coverage for both projects.  
 
@@ -79,14 +79,17 @@ index.js # Support hooks and utilities
 
 2. Install dependencies:
 
+    ```bash
     npm install
 
 3. Open Cypress:
 
+    ```bash
     npx cypress open
 
 4. Run tests in headless mode:
 
+    ```bash
     npx cypress run
 
 5. View Mochawesome reports:
