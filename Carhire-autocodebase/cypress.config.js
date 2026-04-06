@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://car-hire.test/',
+    baseUrl: 'https://hammerhead-app-dk3e2.ondigitalocean.app/',
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
